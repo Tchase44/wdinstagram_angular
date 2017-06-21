@@ -1,0 +1,21 @@
+<h2>show page</h2>
+<div>
+	<img src="{{VMshow.post.photo_url}}">
+	<p> {{VMshow.post.author}} </p>
+	<p> {{VMshow.post.body}} </p>
+	<!-- <p>{{$stateParams.id}}</p> -->
+	<a href="#" ng-click="VMshow.post.hide = !VMshow.post.hide">Edit</a>
+	<a href="#">Delete</a>
+</div>
+<div ng-init="VMshow.post.hide = false" ng-show="VMshow.post.hide">
+	<form>
+		<input type="text" placeholder="Photo URL" ng-model="VMshow.post.photo_url"><br>
+		<input type="text" placeholder="VMshow.post.author" ng-model="VMshow.post.author"><br>
+		<input type="text" placeholder="VMshow.post.body" ng-model="VMshow.post.body">
+		<button ng-click="">Submit!</button>
+	</form>
+</div>
+
+
+<!-- ng-init="VMshow.post.hide = false" ng-show="VMshow.post.hide"
+ng-click="VMshow.post.hide = !VMshow.post.hide" -->
