@@ -1,7 +1,12 @@
 class EntriesController < ApplicationController
   def index
     @entries = Entry.all
-    render json: @entries
+    # respond_to do |format|
+      # format.json {
+        render json: @entries
+      # }
+      # format.html {render :index}
+    # end
   end
 
   def show
