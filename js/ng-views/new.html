@@ -1,0 +1,9 @@
+<h2>Make a Post</h2>
+<div>
+	<form>
+		<input type="text" placeholder="Photo URL" ng-model="vmNew.post.photo_url"><br>
+		<input type="text" placeholder="Author" ng-model="vmNew.post.author"><br>
+		<input type="text" placeholder="Say something" ng-model="vmNew.post.body">
+		<button ng-click="vmNew.create()">Submit Post!</button>
+	</form>
+</div>

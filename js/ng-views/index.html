@@ -1,7 +1,7 @@
 <h2>Posts</h2>
 
 <div ng-repeat="post in vm.posts">
-	<a ui-sref="instaShow({id: $index})"><img src="{{post.photo_url}}"></a>
+	<a ui-sref="instaShow({id: post.id})"><img src="{{post.photo_url}}"></a>
 	<p> {{post.author}} </p>
 	<p> {{post.body}} </p>
 </div>
